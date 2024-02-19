@@ -11,5 +11,5 @@ export {
     Messages,
     Profile,
     SettingsScreen,
-    Home
+    Home,
 }

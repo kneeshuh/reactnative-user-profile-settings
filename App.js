@@ -5,7 +5,6 @@ import * as SplashScreen from 'expo-splash-screen'
 import { useCallback } from 'react';
 import { EditProfile } from './screens';
 import BottomTabNav from './navigation/BottomTabNav';
-import Login from './screens/Login';
 
 SplashScreen.preventAutoHideAsync()
 const Stack = createNativeStackNavigator()
@@ -31,19 +30,13 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName='Login'
+        initialRouteName='BottomTabNavigation'
       >
         
         {/* {user ? (
 
         )} */}
-        <Stack.Screen 
-          name="Login"
-          component={Login}
-          options={{
-            headerShown: false
-          }}
-        />
+        
         <Stack.Screen 
           name="BottomTabNavigation"
           component={BottomTabNav}
